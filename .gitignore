@@ -1,0 +1,5 @@
+site/
+.arts/
+.codeartsdoer/
+__pycache__/
+*.pyc

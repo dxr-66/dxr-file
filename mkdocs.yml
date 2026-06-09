@@ -1,0 +1,139 @@
+site_name: 我的 学习空间
+site_description: 个人学习笔记与文章收藏
+site_author: dxr
+site_url: https://dxr-66.github.io/dxr-file
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗黑模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: overrides
+
+repo_url: https://github.com/dxr-66/dxr-file
+repo_name: dxr-file
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-\.]+'
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 首页: index.md
+  - 学习笔记:
+    - 学习笔记/index.md
+    - Python:
+      - 学习笔记/Python/index.md
+      - 学习笔记/Python/python-basics.md
+      - 学习笔记/Python/python-advanced.md
+    - OpenCV:
+      - 学习笔记/OpenCV/index.md
+      - 学习笔记/OpenCV/opencv-basics.md
+      - 学习笔记/OpenCV/opencv-video.md
+    - Flask:
+      - 学习笔记/Flask/index.md
+      - 学习笔记/Flask/flask-basics.md
+  - 公众号收藏:
+    - 公众号收藏/index.md
+    - 公众号收藏/python-articles.md
+    - 公众号收藏/ai-articles.md
+  - 代码片段:
+    - 代码片段/index.md
+    - 代码片段/python-snippets.md
+    - 代码片段/opencv-snippets.md
+  - 学习进度: progress.md
+  - 关于: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dxr-66
+  analytics:
+    feedback:
+      title: 这篇文章有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 有帮助
+          data: 1
+          note: 感谢反馈！
+        - icon: material/thumb-down-outline
+          name: 没帮助
+          data: 0
+          note: 感谢反馈，我会继续改进！
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
