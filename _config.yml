@@ -1,0 +1,6 @@
+# _config.yml
+# 这是你的博客配置文件
+
+theme: jekyll-theme-cayman
+title: 我的博客
+description: 欢迎来到我的个人博客
