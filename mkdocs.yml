@@ -36,6 +36,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - content.action.edit
     - toc.follow
   icon:
     repo: fontawesome/brands/github
@@ -43,6 +44,7 @@ theme:
 
 repo_url: https://github.com/dxr-66/dxr-file
 repo_name: dxr-file
+edit_uri: edit/main/docs/
 
 plugins:
   - search:
