@@ -1,4 +1,4 @@
-# 这是一个最基础、最安全的配置，先让网站恢复访问
+# 博客配置文件
 title: 我的博客
 description: 这是我的个人技术博客
 theme: jekyll-theme-cayman
