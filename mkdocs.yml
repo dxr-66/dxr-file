@@ -106,6 +106,8 @@ nav:
     - Flask:
       - 学习笔记/Flask/index.md
       - 学习笔记/Flask/flask-basics.md
+    - 建筑规范:
+      - 学习笔记/建筑规范/index.md
   - 公众号收藏:
     - 公众号收藏/index.md
     - 公众号收藏/python-articles.md
