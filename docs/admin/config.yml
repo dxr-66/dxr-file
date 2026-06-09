@@ -2,7 +2,7 @@ backend:
   name: github
   repo: dxr-66/dxr-file
   branch: main
-  base_url: https://api.github.com
+
 
 media_folder: "docs/assets/images"
 public_folder: "/assets/images"
